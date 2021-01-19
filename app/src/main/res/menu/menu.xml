@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/blog"
+        android:icon="@drawable/blogging"
+        android:title="Blog"/>
+    <item android:id="@+id/upload"
+        android:icon="@drawable/upload"
+        android:title="Upload"/>
+    <item android:id="@+id/feedback"
+        android:icon="@drawable/feedback"
+        android:title="Feedback"/>
+    <item android:id="@+id/setting"
+        android:icon="@drawable/settings"
+        android:title="Setting"/>
+    <item android:id="@+id/help"
+        android:icon="@drawable/help"
+        android:title="Help"/>
+    <item android:id="@+id/about"
+        android:icon="@drawable/splashbg"
+        android:title="About"/>
+    <item android:id="@+id/term"
+    android:icon="@drawable/terms"
+    android:title="Term and Condition"/>
+    <item android:id="@+id/privacy"
+        android:icon="@drawable/privacy"
+        android:title="Privacy"/>
+    <item android:id="@+id/sign_out"
+    android:icon="@drawable/logout"
+    android:title="Sign Out"/>
+
+
+
+
+
+</menu>

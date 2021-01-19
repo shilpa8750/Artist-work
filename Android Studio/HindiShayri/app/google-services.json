@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "935939003030",
+    "firebase_url": "https://hindishayri-91116.firebaseio.com",
+    "project_id": "hindishayri-91116",
+    "storage_bucket": "hindishayri-91116.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935939003030:android:91252164d37107665668b7",
+        "android_client_info": {
+          "package_name": "com.shilpa.hindishayri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935939003030-dajcoan6vsdtv3q24eqcrm96avd1aanl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shilpa.hindishayri",
+            "certificate_hash": "e953095f7a8c53144b9077c376571857da8839a4"
+          }
+        },
+        {
+          "client_id": "935939003030-jvu80kkprfngukbl2tsshvs0g093o6j2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0-eEFFv6ZK1ywOL5HNTvsU96YH1ccfik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935939003030-jvu80kkprfngukbl2tsshvs0g093o6j2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

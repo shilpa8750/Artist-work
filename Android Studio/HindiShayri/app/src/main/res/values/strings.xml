@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Hindi Shayri</string>
+
+    <string name="close">Close</string>
+    <string name="open">Open</string>
+
+    <string name="facebook_page">Follow on Facebook</string>
+    <string name="instagram">Follow on Instagram</string>
+    <string name="youtube_channel">Visit Our Channel</string>
+    <string name="communication">Communication</string>
+    <string name="nav_rate">Rate or Feedback</string>
+    <string name="nav_share">Share</string>
+    <string name="nav_privacy_policy">Privacy Policy</string>
+    <string name="nav_terms_conditions">Terms and Conditions</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shilpa.hindishayri">
+
+<!--    <uses-permission android:name="android.permission.INTERNET"/>-->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".NavigationDrawerItem.TermsConditions"/>
+        <activity android:name=".NavigationDrawerItem.PrivacyPolicy" />
+        <activity android:name=".NavigationDrawerItem.Instagram" />
+        <activity android:name=".NavigationDrawerItem.Facebook" />
+        <activity android:name=".NavigationDrawerItem.YouTube" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".categories.Attitude"/>
+        <activity android:name=".categories.BestWishes"/>
+        <activity android:name=".categories.Birthday"/>
+        <activity android:name=".categories.Couple"/>
+        <activity android:name=".categories.Friendship"/>
+        <activity android:name=".categories.Funny"/>
+        <activity android:name=".categories.GOD"/>
+        <activity android:name=".categories.GoodMorning"/>
+        <activity android:name=".categories.GoodNight"/>
+        <activity android:name=".categories.Love"/>
+        <activity android:name=".categories.Romantics"/>
+        <activity android:name=".categories.ValentineDay"/>
+
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+<!--        <meta-data-->
+<!--            android:name="com.google.android.gms.ads.APPLICATION_ID"-->
+<!--            android:value="ca-app-pub-xxxxxxxxxxxxxxxx~yyyyyyyyyy"/>-->
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

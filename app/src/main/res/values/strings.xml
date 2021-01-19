@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Artist_Work</string>
+    <string name="facebook_app_id">212536117186237</string>
+    <string name="fb_login_protocol_scheme">fb212536117186237</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+
+</resources>

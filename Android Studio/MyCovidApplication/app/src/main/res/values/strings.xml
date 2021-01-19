@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyCovidApplication</string>
+    <string name="total_cases">TOTAL CASES</string>
+    <string name="recovered">RECOVERED</string>
+    <string name="death">DEATH</string>
+    <string name="active">ACTIVE</string>
+    <string name="corona_update">CORONA UPDATE</string>
+</resources>
