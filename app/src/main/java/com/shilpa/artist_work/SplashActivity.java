@@ -8,6 +8,8 @@ import android.os.Handler;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.shilpa.artist_work.login_activity.AuthActivity;
+
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -30,7 +32,7 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashActivity.this, HomeActivity.class);
+                Intent intent = new Intent(SplashActivity.this, AuthActivity.class);
                 startActivity(intent);
                 finish();
             }

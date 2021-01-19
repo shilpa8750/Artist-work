@@ -8,4 +8,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#4F4E4E</color>
+    <color name="email">#AAA9AD</color>
 </resources>

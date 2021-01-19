@@ -7,11 +7,18 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.shilpa.artist_work.login_activity.EmailActivity;
 
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -19,10 +26,20 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     NavigationView nav;
     Toolbar toolbar;
 
+    private TextView name, email;
+    private Button logout;
+
+    FirebaseAuth auth =FirebaseAuth.getInstance();
+    FirebaseUser user =auth.getCurrentUser();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        name = findViewById(R.id.user_name);
+        email = findViewById(R.id.user_email);
+        logout = findViewById(R.id.sign_out);
 
         drawerLayout = findViewById(R.id.drawer);
         nav= findViewById(R.id.nav_menu);
@@ -39,6 +56,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         nav.setNavigationItemSelectedListener(this);
     }
 
+
     @Override
     public void onBackPressed() {
         if (drawerLayout.isDrawerOpen(GravityCompat.START)){
@@ -48,16 +66,31 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         {
             super.onBackPressed();
         }
+        if (user!=null){
+            name.setText(user.getDisplayName());
+            email.setText(user.getEmail());
+        }
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                auth.signOut();
+                startActivity(new Intent(HomeActivity.this,EmailActivity.class));
+                 finish();
+            }
+        });
     }
 
-    /**
-     * Called when an item in the navigation menu is selected.
-     *
-     * @param item The selected item
-     * @return true to display the item as the selected item
-     */
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         return true;
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if(user==null){
+            startActivity(new Intent(HomeActivity.this, EmailActivity.class));
+            finish();
+        }
     }
 }

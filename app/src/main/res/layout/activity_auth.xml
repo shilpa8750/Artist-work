@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login_activity.AuthActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="250dp"
+        android:src="@drawable/splashbg"
+        android:layout_marginStart="130dp"/>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:text="CONNECT.YOUR.SELF"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="80dp" />
+
+    <Button
+        android:id="@+id/email_login"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:shadowColor="@color/black"
+        android:text="Sign up with Email"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="100dp"
+        android:onClick="email_login"
+        />
+
+    <Button
+        android:id="@+id/fb_login"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:text="Login with facebook"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="500dp"
+        android:onClick="fb_login"/>
+
+    <TextView
+        android:id="@+id/already_login"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:text="Already have an account? Sign In"
+        android:layout_marginTop="700dp"
+        android:layout_marginLeft="100dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+
+</RelativeLayout>
