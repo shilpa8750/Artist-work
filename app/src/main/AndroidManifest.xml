@@ -11,12 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Artist_Work">
-        <activity android:name=".login_activity.LoginActivity"></activity>
+        <activity android:name=".bottom_menu.UploadProfile"
+            android:theme="@style/FullScreen"> </activity>
+        <activity android:name=".login_activity.LoginActivity" />
         <activity android:name=".login_activity.FbActivity" />
         <activity android:name=".login_activity.EmailActivity" />
         <activity android:name=".login_activity.AuthActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".SplashActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -9,4 +9,15 @@
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#4F4E4E</color>
     <color name="email">#AAA9AD</color>
+    //bottom navigation
+    <color name="bottom_home">#5E99D3</color>
+    <color name="bottom_notification">#D27E7E</color>
+    <color name="bottom_save">#7BCD7F</color>
+    <color name="bottom_profile">#D75F5F</color>
+    <color name="bottom_upload">#E4C48E</color>
+
+    <color name="transparent">#00000000</color>
+
+
+
 </resources>

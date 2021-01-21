@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeActivity"
-    android:background="@color/black"
+    android:background="@color/white"
     android:id="@+id/drawer"
     tools:openDrawer="start"
     android:fitsSystemWindows="true">
@@ -24,6 +24,12 @@
    <RelativeLayout
        android:layout_width="match_parent"
        android:layout_height="match_parent">
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/rcv"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginTop="65dp"
+           />
 
        <androidx.appcompat.widget.Toolbar
            android:id="@+id/toolbar2"
@@ -46,7 +52,7 @@
            android:layout_marginStart="55dp"
            android:layout_marginTop="4dp"
            android:text="Browse"
-           android:textColor="@color/white"
+           android:textColor="@color/black"
            android:textSize="24sp" />
 
        <ImageView
@@ -62,8 +68,25 @@
            android:layout_marginStart="350dp"
            android:layout_marginTop="4dp"/>
 
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/container"/>
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/container2"
+           android:layout_above="@id/bottom_nav"/>
+
+       <com.google.android.material.bottomnavigation.BottomNavigationView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/bottom_nav"
+           app:menu="@menu/bottom_menu"
+           android:layout_alignParentBottom="true"
+           android:background="@color/blue"/>
+
    </RelativeLayout>
 
-
-
 </androidx.drawerlayout.widget.DrawerLayout>
+
